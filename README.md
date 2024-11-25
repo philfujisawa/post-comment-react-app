@@ -1,53 +1,51 @@
 # Post Comment React App
+![projeto1](assets/post-comment-react-app.png)
+_This project is a simple application that allows users to create posts and add comments to them.The project is set up for tests automation and continuous integration using GitHub Actions._
 
-Este repositório contém um aplicativo React simples de comentário de post.
+**Para README em Português acessar no repositório o documento README-PTBR.md**
 
-### Pré-requisitos
+### Prerequisites
 
-Certifique-se de ter o Node.js instalado em seu sistema antes de executar este aplicativo.
+You will need to instal:
++ [Node.js](https://nodejs.org)
 
-- Node.js: [Baixe aqui](https://nodejs.org)
+### Installation Steps
 
-### Instalação
+1. Clone this repository:
 
-1. Clone o repositório para o seu diretório local:
-
-```shell
-git clone <URL do repositório>
 ```
-
-2. Navegue até o diretório do projeto:
-
-```shell
-cd <nome do diretório>
+git clone https://github.com/philfujisawa/post-comment-react-app.git
 ```
+2. Navigate to project directory. Choose directory based on where you cloned the repository:
 
-3. Instale as dependências necessárias:
+```
+cd path/to/directory/post-comment-react-app
+```
+3. Install the project dependencies:
 
-```shell
+```
 npm install
 ```
 
-### Executando o Aplicativo
+### Run the app
 
-Depois de concluir a instalação, você pode iniciar o aplicativo executando o seguinte comando:
+After finish installation, you can run with this command:
 
-```shell
+```
 npm run dev
 ```
+This will start the React application in development mode. Open your browser and go to http://localhost:5173 to view the application.
 
-Isso iniciará o aplicativo React em modo de desenvolvimento. Abra o navegador e acesse `http://localhost:5173` para visualizar o aplicativo.
+### Project build
 
-Qualquer alteração no código-fonte será automaticamente recarregada no navegador.
-
-### Construção do Projeto
-
-Para criar uma versão otimizada do aplicativo para produção, execute o seguinte comando:
-
-```shell
+To create an optimized production build of the application, run the following command:
+```
 npm run build
 ```
+This will create a `build` folder in the project directory containing the optimized files for production.
 
-Isso criará uma pasta `build` no diretório do projeto com os arquivos otimizados para produção.
-
-
+Now run cypress tests:
+```
+npx cypress open
+```
+Thank you so much!
